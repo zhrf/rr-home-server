@@ -2,8 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 var UserSchema = new Schema({     
     userid: {type: String},      
-    username : { type: String},                    //用户账号
-    password: {type:  String},                      //id
+    username : { type: String}, 
+    email : {type: String},          
+    password: {type:  String},
+    portraitUrl: {type: String},                      //id
     userage: {type: Number},                        //年龄
     dishList: {
         dishId :{type: String},
